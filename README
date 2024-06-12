@@ -1,0 +1,14 @@
+Hello World với Docker: Chạy một container Docker đơn giản chứa ứng dụng “Hello World”.
+
+Tạo container web server nginx
+
+3.1: Tạo web server sử dụng nginx hệ điều hành Alpine lắng nghe ở cổng 8080
+3.1: Tạo web server sử dụng nginx hệ điều hành Alpine lắng nghe ở cổng 9000, thư mục web gốc nginx sẽ tham chiếu (mapping volume) vào thư mục trên desk top của bạn chứa một file index.html. Nội dung file index.html in ra dòng chữ “Nginx Docker”
+Tạo container MySQL database
+4.1: Tạo MySQL lắng nghe ở cổng 3000, có password root là ‘abc123-’
+4.2: Tạo MySQL lắng nghe ở cổng mặc định, có password root là ‘abc123-’, có thêm công cụ quản trị adminer
+4.3 : Tạo MySQL lắng nghe ở cổng mặc định, có password root là ‘abc123-’, thư mục data tham chiếu vào thư mục trên desk top của bạn.
+Tạo container Postgresql database
+5.1: Tạo Postgresql database hệ điều hành Alpine lắng nghe ở cổng mặc định
+5.2: Tạo Postgresql cùng phần mềm quản lý Adminer, password root là ‘abc123-’
+5.3: Tạo Postgresql cùng phần mềm quản lý Adminer, password root là ‘abc123-’, thư mục data tham chiếu vào thư mục trên desk top của bạn.
